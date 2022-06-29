@@ -1,0 +1,107 @@
+
+  /* Autor: Jose Manuel Rodriguez
+  proyecto: ejemplificacion del uso de una API con ayuda de https://pokeapi.co
+  se realiza un "pokedex" que se conecta a la API para mostrar los datos */
+
+
+
+*{
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;;
+}
+
+h6{
+    font-weight: 400;
+}
+body{
+    background-color: rgb(168, 3, 3);
+}
+
+.principal{
+    flex-flow: column nowrap;
+
+}
+    .header{
+        flex-flow: column nowrap;
+        background: #000;
+        display: flex;
+        flex-direction: row;
+    }
+
+        .logo{
+            display: flex;
+            background: orange;
+            height: 100px;
+            width: 200px;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .logo img{
+            width: 100%;
+            height: 100%;
+        }
+    .busqueda{
+        background: rgb(7, 7, 139);
+
+    }
+
+
+.navegacion{
+    flex-flow: row nowrap;
+    background: black;
+    min-height: 200px;
+}
+    .anterior{
+        background: aqua;
+        flex: 1 1 auto;
+        flex-direction: column;
+        justify-content: flex-end ;
+        align-items: center;
+    }
+        .pokemonAnterior{
+            background: cadetblue;
+        }
+
+
+    .actual{
+        background: aquamarine;
+        flex: 2 1 auto;
+        flex-direction: column;
+        justify-content: center ;
+        align-items: center;
+    }
+
+        .actual img{
+            width: 200px;
+            height: 200px;
+        }
+
+    .siguiente{
+        background: aqua;
+        flex: 1 1 auto;
+        flex-direction: column;
+        justify-content: flex-end ;
+        align-items: center;
+    }
+        .pokemonSiguiente{
+            background: cadetblue;
+        }
+
+
+
+.section{
+    background: black;
+}
+    .articulos{
+        background: orange;
+        flex: 2 1 auto;
+        flex-flow: row nowrap;
+    }
+
+        .articulo{
+            background: white;
+            flex: 1 1 auto;
+        }
+
